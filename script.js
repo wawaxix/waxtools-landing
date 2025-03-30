@@ -1,7 +1,7 @@
 // Stripe Checkout setup
 console.log("WaxTools script chargé ✅");
 
-const stripe = Stripe("sk_test_51Qzwa0GUMVxc2aDA4e97EzYqBOcbWEmzF2Y5UT1g9yc7t28oXIKzJnqX3E75oD9y0A8lBR7zUe1CgJh779HH0YbZ00Wx4Ylj57"); // ← TA CLÉ PUBLIQUE STRIPE TEST
+const stripe = Stripe("pk_test_51Qzwa0GUMVxc2aDAx2cKkxojorEheP7nrt7hKS6naVw08Un1WQcfVkDkyHdp0DlotGqnmz9UFe56cECt0kHwJmEf00dRLn9nN4"); // ← TA CLÉ PUBLIQUE STRIPE TEST
 
 const buyButton = document.getElementById("buyButton");
 if (buyButton) {
