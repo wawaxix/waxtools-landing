@@ -1,3 +1,4 @@
+// Stripe Checkout setup
 console.log("WaxTools script chargé ✅");
 
 const stripe = Stripe("pk_test_51Qzwa0GUMVxc2aDAx2cKkxojorEheP7nrt7hKS6naVw08Un1WQcfVkDkyHdp0DlotGqnmz9UFe56cECt0kHwJmEf00dRLn9nN4");
@@ -27,12 +28,18 @@ document.getElementById("buyButton").addEventListener("click", async () => {
   }
 });
 
-// ✅ Gestion des résultats
 const params = new URLSearchParams(window.location.search);
 if (params.get("success") === "true") {
+  const key = params.get("key") || "(clé indisponible)";
+
   setTimeout(() => {
     document.querySelector("main").style.display = "none";
-    document.getElementById("confirmation").style.display = "block";
+    const confirm = document.getElementById("confirmation");
+    confirm.style.display = "block";
+
+    const keyDisplay = document.createElement("p");
+    keyDisplay.innerHTML = `<strong>Clé Premium :</strong> ${key}`;
+    confirm.appendChild(keyDisplay);
 
     let count = 0;
     const interval = setInterval(() => {
