@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+body {
+  margin: 0;
+  background: #0f0f0f;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.logo {
+  max-width: 300px;
+  filter: drop-shadow(0 0 10px #00ffffaa);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 20px 0 10px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 25px;
+  background: #00ffff;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttons .btn:hover {
+  background: #ffffff;
+}
+
+.buttons .discord {
+  background: #5865F2;
+  color: white;
+}
