@@ -31,25 +31,35 @@ p {
 }
 
 .buttons .btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 15px 25px;
-  background: #00ffff;
-  color: black;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out;
-}
-
-.buttons .btn:hover {
-  background: #ffffff;
-}
-
-.buttons .discord {
-  background: #5865F2;
-  color: white;
-}
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background: transparent;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .buttons .btn:hover {
+    background: #00ffff;
+    color: #000;
+  }
+  
+  .buttons .discord {
+    border-color: #5865F2;
+    color: #5865F2;
+  }
+  
+  .buttons .discord:hover {
+    background: #5865F2;
+    color: white;
+  }
+  
 
 .confirmation {
     text-align: center;
