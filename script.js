@@ -1,7 +1,8 @@
 // Stripe Checkout setup
 console.log("WaxTools script chargé ✅");
 
-const stripe = stripe("pk_test_51Qzwa0GUMVxc2aDAx2cKkxojorEheP7nrt7hKS6naVw08Un1WQcfVkDkyHdp0DlotGqnmz9UFe56cECt0kHwJmEf00dRLn9nN4");
+const stripe = Stripe("pk_test_51Qzwa0GUMVxc2aDAx2cKkxojorEheP7nrt7hKS6naVw08Un1WQcfVkDkyHdp0DlotGqnmz9UFe56cECt0kHwJmEf00dRLn9nN4");
+
 const buyButton = document.getElementById("buyButton");
 if (buyButton) {
   buyButton.addEventListener("click", async () => {
