@@ -34,6 +34,19 @@ if (params.get("success") === "true") {
     const confirmation = document.getElementById("confirmation");
     confirmation.style.display = "block";
 
+    const copyBtn = document.getElementById("copyKeyBtn");
+if (copyBtn) {
+  copyBtn.addEventListener("click", () => {
+    const keyText = document.getElementById("displayKey")?.textContent || "";
+    navigator.clipboard.writeText(keyText).then(() => {
+      const msg = document.getElementById("copyMessage");
+      msg.style.display = "inline";
+      setTimeout(() => msg.style.display = "none", 2000);
+    });
+  });
+}
+
+
     const key = params.get("key");
     if (key) {
       const keyDisplay = document.getElementById("displayKey");

@@ -101,3 +101,23 @@ p {
     margin-bottom: 10px;
   }
   
+  .key-box {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .key-box .btn.small {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .copy-msg {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85em;
+    color: #00ff99;
+    font-weight: bold;
+  }
+  
