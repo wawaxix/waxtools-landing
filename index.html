@@ -2,40 +2,45 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Waxtools</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
-  <div class="particles"></div>
+  <div class="wave-background"></div>
+  <div class="container">
+    <header>
+      <img src="waxtools-logo.png" alt="Waxtools Logo" class="logo" />
+      <h1>Waxtools</h1>
+      <p>Optimisez votre PC & boostez vos performances FiveM.</p>
+    </header>
 
-  <main>
-    <img src="waxtools-logo.png" alt="Waxtools Logo" class="logo" />
-    <h1>Optimisez votre PC. Boostez votre FiveM. 🔧</h1>
-    <p>L'outil ultime pour des performances maximum.</p>
-
-    <div class="buttons">
+    <section class="actions">
       <a href="https://github.com/wawaxix/waxtools/releases/latest" class="btn">📦 Télécharger Waxtools</a>
-      <button id="buyButton" class="btn">💎 Acheter Waxtools Premium</button>
+      <button id="buyButton" class="btn pulse">💎 Acheter Waxtools Premium</button>
       <a href="https://discord.gg/PgChvpfgBB" class="btn discord">💬 Rejoindre le Discord</a>
-    </div>
-  </main>
+    </section>
 
-  <div id="confirmation" class="confirmation" style="display: none;">
-    <h2>🎉 Merci pour votre achat Premium !</h2>
-    <p>Votre clé a été générée et envoyée par email.</p>
-    <div class="key-box">
+    <section id="confirmation" class="confirmation hidden">
+      <h2>🎉 Merci pour votre achat Premium !</h2>
+      <p>Votre clé a été générée et envoyée par email.</p>
+      <div class="key-box">
         <p id="displayKey" class="key"></p>
         <button id="copyKeyBtn" class="btn small">📋 Copier la clé</button>
-        <span id="copyMessage" class="copy-msg" style="display: none;">✅ Clé copiée !</span>
-      </div>      
-    <a href="https://discord.gg/PgChvpfgBB" class="btn discord">Rejoindre le Discord</a>
-  </div>
+        <span id="copyMessage" class="copy-msg hidden">✅ Clé copiée !</span>
+      </div>
+    </section>
 
-  <div id="cancelled" class="cancelled" style="display: none;">
-    <h2>❌ Paiement annulé</h2>
-    <p>Tu peux réessayer à tout moment.</p>
-    <a href="/" class="btn">Retour à l'accueil</a>
+    <section id="cancelled" class="cancelled hidden">
+      <h2>❌ Paiement annulé</h2>
+      <p>Tu peux réessayer à tout moment.</p>
+      <a href="/" class="btn">Retour à l'accueil</a>
+    </section>
+
+    <footer>
+      <p>© 2025 Waxtools. Tous droits réservés.</p>
+    </footer>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
