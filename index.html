@@ -18,7 +18,8 @@
     <div class="buttons">
       <a href="https://github.com/wawaxix/waxtools/releases/latest" class="btn">📦 Télécharger Waxtools</a>
       <a href="https://discord.gg/PgChvpfgBB" class="btn discord">💬 Rejoindre le Discord</a>
-      <a id="buyButton" class="btn premium">💎 Acheter Waxtools Premium</a>
+      <input type="email" id="emailInput" placeholder="Ton adresse email" required />
+      <button id="buyButton" class="btn premium">💎 Acheter Waxtools Premium</button>
     </div>
   </main>
   <div id="confirmation" class="confirmation" style="display: none;">
@@ -26,6 +27,11 @@
     <p>Votre clé a été générée et envoyée par email.</p>
     <a href="https://discord.gg/PgChvpfgBB" class="btn discord">Rejoindre le Discord</a>
   </div>
+  <div id="cancelled" class="cancelled" style="display: none;">
+    <h2>❌ Paiement annulé</h2>
+    <p>Tu peux réessayer à tout moment.</p>
+    <a href="/" class="btn">Retour à l'accueil</a>
+  </div>  
   
   <script src="script.js"></script>
 </body>

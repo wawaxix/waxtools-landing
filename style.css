@@ -66,3 +66,28 @@ p {
     margin-bottom: 30px;
   }
   
+  input#emailInput {
+    padding: 12px;
+    font-size: 1em;
+    width: 280px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 12px;
+    outline: none;
+    text-align: center;
+  }
+  
+  #buyButton {
+    cursor: pointer;
+  }
+  
+  .cancelled {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .cancelled h2 {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
