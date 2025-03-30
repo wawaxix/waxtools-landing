@@ -37,7 +37,11 @@ if (params.get("success") === "true") {
     const key = params.get("key");
     if (key) {
       const keyDisplay = document.getElementById("displayKey");
-      keyDisplay.innerHTML = `<strong>Clé Premium :</strong> ${key}`;
+      if (keyDisplay) {
+        keyDisplay.innerHTML = `<strong>Clé Premium :</strong> ${key}`;
+      } else {
+        console.warn("🔍 Élément #displayKey introuvable");
+      }
     }
 
     let count = 0;
