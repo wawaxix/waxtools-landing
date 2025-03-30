@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <title>Waxtools</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <div class="particles"></div>
@@ -16,9 +18,15 @@
     <div class="buttons">
       <a href="https://github.com/wawaxix/waxtools/releases/latest" class="btn">📦 Télécharger Waxtools</a>
       <a href="https://discord.gg/PgChvpfgBB" class="btn discord">💬 Rejoindre le Discord</a>
+      <a id="buyButton" class="btn premium">💎 Acheter Waxtools Premium</a>
     </div>
   </main>
-
+  <div id="confirmation" class="confirmation" style="display: none;">
+    <h2>🎉 Merci pour votre achat Premium !</h2>
+    <p>Votre clé a été générée et envoyée par email.</p>
+    <a href="https://discord.gg/PgChvpfgBB" class="btn discord">Rejoindre le Discord</a>
+  </div>
+  
   <script src="script.js"></script>
 </body>
 </html>
