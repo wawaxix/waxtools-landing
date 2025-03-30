@@ -30,7 +30,12 @@ document.getElementById("buyButton").addEventListener("click", async () => {
 
 const params = new URLSearchParams(window.location.search);
 if (params.get("success") === "true") {
-  const key = params.get("key") || "(clé indisponible)";
+    const key = params.get("key");
+    if (key) {
+      const keyElement = document.getElementById("displayKey");
+      keyElement.innerHTML = `<strong>Clé Premium :</strong> ${key}`;
+    }
+    
 
   setTimeout(() => {
     document.querySelector("main").style.display = "none";
