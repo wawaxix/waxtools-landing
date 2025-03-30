@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -13,22 +14,14 @@
     position: relative;
   }
   
-  .wave-background {
+  /* PARTICLES BACKGROUND FIXED */
+  .particles {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at 50% 50%, #1f2937 20%, #0d1117 100%);
-    animation: wave 15s infinite linear;
+    width: 100%;
+    height: 100%;
     z-index: -1;
-    opacity: 0.25;
-  }
-  
-  @keyframes wave {
-    0% { transform: translateX(0) translateY(0); }
-    50% { transform: translateX(-10%) translateY(-10%); }
-    100% { transform: translateX(0) translateY(0); }
   }
   
   .container {
@@ -36,9 +29,9 @@
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
-    position: relative; /* 👈 important */
+    position: relative;
     z-index: 1;
-  }  
+  }
   
   .logo {
     max-width: 150px;
@@ -134,13 +127,3 @@
     font-size: 0.9em;
     color: #ffffff55;
   }
-
-  .particles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  
